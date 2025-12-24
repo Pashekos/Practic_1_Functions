@@ -101,6 +101,17 @@ print (find_replace_numbers(a))
 
 """ 9. Дано трехзначное число. Используя одну операцию 
 деления нацело, вывести первую цифру данного числа (сотни)."""
+def find_first_num(a):
+    return a // 100
+
+print(find_first_num(a))
+
 
 """ 10. Дано трехзначное число. Вывести вначале его последнюю 
 цифру (единицы), а затем — его среднюю цифру (десятки)."""
+def find_last_and_midle_num(a):
+    units = (a % 10)
+    tens = (a // 10 % 10)
+    return units, tens
+
+print (find_last_and_midle_num(a))
