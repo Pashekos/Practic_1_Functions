@@ -8,7 +8,7 @@
 import random
 
 first_number = random.randint(0,100)
-second_number = 0 #random.randint(0,100)
+second_number = random.randint(0,100)
 list_operation =('+', '-', '/', '*')
 
 operation = random.choice(list_operation)
